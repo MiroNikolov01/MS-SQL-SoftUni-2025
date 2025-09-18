@@ -92,7 +92,7 @@ HireDate
   ORDER BY HireDate DESC
 -- Problem 21
   UPDATE Employees
-  SET Salary /= 1.12
+  SET Salary *= 1.12
   WHERE DepartmentID IN (
               SELECT DepartmentID 
                 FROM Departments 
@@ -126,3 +126,4 @@ ORDER BY CountryName ASC
 SELECT [Name]
   FROM Characters
 ORDER BY [Name] ASC
+
